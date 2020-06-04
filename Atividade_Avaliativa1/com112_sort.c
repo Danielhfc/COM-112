@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <time.h>
 #include <math.h>
-#include "com_112sort.h"
-#include "com_112file.h"
+#include "com112_sort.h"
+#include "com112_file.h"
 
 void bubble_sort(int vetor[], int n, int *comp, int *mov)
 {

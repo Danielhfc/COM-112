@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include "com_112file.h"
-#include "com_112sort.h"
+#include<time.h>
+#include "com112_file.h"
+#include "com112_sort.h"
 
 
 int menu();
@@ -135,7 +136,7 @@ printf("Opcão inválida!\n");
     mov = 0;
       copiaVetor(v1, v, tam); //copia o vetor para evitar perder o vetor com os numeros desorganizados.
       t_ini = clock();
-      quickSort(v1,0,tam,&comp,&mov);
+      quickSort(v1,0,tam-1,&comp,&mov);
       t_fim = clock();
       tempo = (t_fim - t_ini)/(CLOCKS_PER_SEC/1000);//calculo do tempo de execução
       relatorioEscreveTodos(tam, tempo,comp,mov,5);

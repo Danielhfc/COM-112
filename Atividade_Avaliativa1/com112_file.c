@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-#include "com_112file.h"
+#include "com112_file.h"
 
 void saida(int *v, int tam){
   FILE *sai;
